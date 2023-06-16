@@ -13,4 +13,21 @@ public:
 		top = -1;
 
 	}
+	void push() {
+		int element;
+		cout << "\nEnter an Element: ";
+		cin >> element;
+
+		if (top == 4) {//step 1
+			cout << "Number of data exceds the limit" << endl;
+		}
+
+		top++;
+		stack_array[top] = element;//step 3
+		cout << endl;
+		cout << element << " ditambahkan(pushed)" << endl;
+
+		return;
+
+	}
 };
